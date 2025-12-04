@@ -50,6 +50,8 @@
 
 \begin{itemize}
 	\item 11/08/2025 @ 12:00:00 - 13:00:00
+	\item 12/01/2025 @ 12:00:00 - 13:00:00
+	\item 12/03/2025 @ 10:00:00 - 11:00:00
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -58,29 +60,63 @@
 
 \section{Strategies to Prepare for Final Exam}
 
-\paragraph{This text we highlight the best practices and strategies we will undertake to prepare for our final exam.}
+\paragraph{ This document will outline the strategies our group used to prepare for the final exam in CS1.
+	We will discuss how we organized our meetings, what tools we used to collaborate, and how we divided the work among group members. Additionally, we will reflect on our experiences and the effectiveness of our study methods and 
+	highlight key discoveries made during our group study sessions.}
 
 %------------------------------------------------
 
 \section{Understanding our Group Activity}
 \subsection{In Recitation}
 \paragraph{On 11/06/2025 our group was restructured to combine several people from other groups that had more than 80\% of their members drop.
-	In this rececitation we talked about Tries and organized a way for our first ever meeting our of recitation.}
+	This lead to a new group dynamic and we had to quickly adapt to working with new members. We discussed our strengths and weaknesses in the subject matter 
+	and decided to focus on areas where we felt less confident. We also established a schedule for our meetings and set goals and explectaions for each session to ensure we stayed on track. We agreed that the best way to meet up was via Discord. 
+	This woudl allow us to be flexible with our meeting times and accomodate everyone's schedules. Discord also allowred us to shared our screens and work through problems together in real-time.
+	}
 \subsection{Outside of Recitation}
-\paragraph{Our group discussed big O runtime and the best practices to solve these kinds of problems. (more details to come)}
+
+\begin{itemize}
+    \item Meeting 1: 11/08/2025:\\
+	During our first meeting as a newly formed group, we focused on reviewing the midterm to identify where each member’s weaknesses lay. From that discussion, we reached the consensus that concentrating our efforts on algorithm analysis would benefit the group the most.
+
+We began with a problem we considered relatively simple. We selected the first question from Section C of the Spring 2023 FE, which presented a segment of code and asked us to determine its runtime. We solved this fairly quickly, as the solution primarily involved examining the nested loops and identifying the resulting time complexity.
+
+During the second part of our session, we shifted to the Spring 2016 FE Part B time-complexity question. The problem stated that a function with time complexity $O(n^2)$ takes 338 ms for an input of size 13{,}000, and asked how long it would take for an input of size 8{,}000. We initially assumed the change would scale proportionally, but quickly remembered that quadratic time does not behave linearly. To correctly approach the problem, we used the standard form:
+\[
+T(n) = cn^2
+\]
+Given $T(13000) = 338 \text{ ms}$, we solved for the constant:
+\[
+c = \frac{338}{13000^2}
+\]
+After calculating $c$, we substituted $n = 8000$:
+\[
+T(8000) = c(8000^2)
+\]
+This resulted in a runtime of approximately $128 \text{ ms}$. Working through the full expression clarified why a simple proportional scale-down would have been incorrect. From this problem we are understood the best method to approch our meetings. We saw the most brnfit when one of us shared our screen and walked through each step so the group could verify the calculations together. Whenever arithmetic uncertainty came up, we checked our work using our notes and online tools. This collaborative process helped solidify our understanding of hard topics and problems.
+
+
+\end{itemize}
 
 %--------------------------------------------------------------------------------------------
 
 \section{Tools Used}
 The following are tools we used to solve some problems and brainstorm ideas.
 \begin{itemize}
-	\item cattis maybe?
-	\item that one program we used during our zoom meeting... forgot the name
+	\item Midterm Exam to review and identify weak points.
+	\item Exams from previous semesters from Professor Guha's website.
+	\item Class notes from lectures.
+	\item "FEPrep.net" - Website created by fellow UCF student: Dmytro Chygarov. The site contains practice problems and solutions for the questions that appreaed on the foundation exam from previous years. 
 \end{itemize}
 
 %---------------------------------------------------------------------------------------------
 \section{Summary}
-\paragraph{Here we will summarize what we went through, the discoveries we found, the teamwork that happened and how we met outside of recitation}
+\paragraph{-Meeting 1: Overall, this meeting established our foundation and expectations for how we will operate as a group moving forward. 
+By beginning with a quick review problem and then working collaboratively through the more challenging questions, we set a clear norm for future meetings: start with brief confidence-building review, 
+then transition into deeper analysis with shared screens, open discussion, and collective verification of each step. 
+This session helped us better understand algorithm analysis and demonstrated the value of 
+walking through solutions together rather than working in isolation. The team helped one another through arithmetic, referencing notes, and 
+checking calculations—gave us a structure that will guide our next sessions and ensured that each member feels supported.}
 
 %----------------------------------------------------------------------------------------------------
 \section{Key Discoveries}
@@ -95,6 +131,8 @@ grew in response to our work together as a team.}
 \subsection{Kiara Yost}
 \paragraph{Thoughts?}
 \subsection{Dhyan Suresh}
-\paragraph{Thoughts?}
+\paragraph{The group study sessions were incredibly beneficial for my understanding of the course material. It was very relevant early on that we identified our weak points and focused our efforts there. The collaborative environment allowed 
+us to help on another by allowing each member to take lead when topics they were strong in came up. Having more time with topics beyond the classroom provided a deeper understanding and helped solidify concepts that were previously unclear. 
+Overall, the group study sessions were a valuable experience that enhanced my learning and prepared me well for the final exam.}
 
 \end{document}
